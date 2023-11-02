@@ -36,3 +36,10 @@ h1 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
+
+#home {
+  background-image: url('img/luffy.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
