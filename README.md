@@ -9,3 +9,14 @@ TODO Meeting 1
 
 
 - Feel free to edit design to fit the Figma layout better and organize sections of code.
+
+11/4/23 Jaylin:
+- Need to insert valid pictures when they are taken.
+- Add symbol on homepage (seen on Figma top left corner)?
+- Add buttons throughout site (e.g. Contact, Learn More)? Where should these buttons lead to?
+- Some specific things to implement:
+    - What Is FLY? (w/ photo reel).
+    - Sign Up/Donate buttons.
+    - Topics Covered (what would "Read More" lead to?).
+    - Database for Interest Form.
+    - Bottom wrapper w/ trademark(left) & socials(right).
