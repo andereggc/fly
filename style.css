@@ -267,9 +267,32 @@ button:hover {
   background-color: #2d7e3a;
 }
 
-#home {
-  background-image: url('img/luffy.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+/* Style for the footer */
+.footer {
+  background-color: #000; /* Black background color */
+  color: #3fa94a; /* Text color for the trademark and social media links */
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  text-align: left;
+  margin: 0;
+}
+
+.footer-right {
+  text-align: right;
+  margin: 0;}
+
+.footer-right a {
+  color: #3fa94a; /* Color for the social media links */
+  text-decoration: none;
+  margin-right: 10px; /* Adjust spacing between links */
 }

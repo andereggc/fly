@@ -19,4 +19,3 @@ TODO Meeting 1
     - Sign Up/Donate buttons.
     - Topics Covered (what would "Read More" lead to?).
     - Database for Interest Form.
-    - Bottom wrapper w/ trademark(left) & socials(right).
