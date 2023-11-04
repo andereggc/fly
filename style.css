@@ -11,17 +11,19 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #3fa94a;
+  background-color: #3fa94ab6;
   padding: 10px 0;
   z-index: 1000;
 }
 
 .navbar a {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.3s;
-  font-family: "Exo", sans-serif;
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .navbar a:hover {
@@ -59,6 +61,12 @@ h1 {
 }
 .section-text p {
   font-size: 16px;
+}
+.center-text {
+  text-align: center;
+}
+.center-text h1 {
+  display: inline-block;
 }
 
 /* Home Section */
@@ -99,6 +107,7 @@ h1 {
   align-self: stretch;
   font-family: "Oswald", sans-serif;;
   font-weight: 800;
+  text-shadow: 11px 11px 3px #000;
   color: white;
   line-height: 72px;
   position: relative;
@@ -138,7 +147,19 @@ h1 {
 
 .benefits-section {
   color: black;
+  background-color: white;
   padding: 10px 0%;
+}
+.benefits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 .benefits-image img {
   position: relative;
@@ -158,21 +179,68 @@ h1 {
   padding-left: 160px;
   padding-right: 160px;
 }
+
+/* Support Us Section */
+
+/* Style for the "Support Us" section */
+.support-us-section {
+  color: black;
+  background-color: #3fa94a33; /* Set your desired background color */
+  padding: 60px 10%;
+}
+.support-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.support-us-image img {
+  height: 450px;
+  object-fit: cover;
+}
+/* Style for support options (donations and volunteering) */
+.support-options {
+  display: flex;
+  justify-content: space-between;
+}
+.donation-option,
+.volunteer-option {
+  flex: 1;
+  padding: 20px;
+}
+/* Style for the "Donate Now" and "Become a Volunteer" buttons */
+.donation-option a,
+.volunteer-option a {
+  display: inline-block;
+  background-color: #3fa94a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.donation-option a:hover,
+.volunteer-option a:hover {
+  background-color: #2d7e3a;
+}
+
 /* Contact Us Section */
 
 .contact-form {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   background-color: #3fa94a33;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .contact-form h2 {
   text-align: center;
   margin: 0; 
 }
 .form-group {
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 label {
