@@ -1,5 +1,8 @@
 # updated_fly_website
 
+Commands to update:
+git pull origin main
+
 TODO Meeting 1
 - Use JS to implement functionality for nav bar and buttons. Buttons should jump to sections on the page.
 - Include built-in contact form with backend database (google forms THEN firebase)
