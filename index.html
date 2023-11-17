@@ -21,14 +21,46 @@
         <div class="background-image"></div>
         <div class="content">
             <h1>Financial Literacy For The Youth (FLY)</h1>
-            <p>Empowering the youth to take control of their personal finances</p> 
+            <p>Empowering the youth to take control of their personal finances</p>
         </div>
-    </section>    
+    </section>
 
     <section id="about-us" class="about-us-section">
         <div class="about-us-content">
             <div class="about-us-image">
-                <img src="images/about_us_image.png" alt="About Us Image">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <div class="slide active">
+                        <img src="images/IMG_4496.jpg" alt="Description" style="width:100%">
+                        <div class="slide-caption">Caption for image 1</div>
+                    </div>
+                    <!-- more slides -->
+                    <div class="slide active">
+                        <img src="images/IMG_4503.jpg" alt="Description" style="width:100%">
+                        <div class="slide-caption">Caption for image 2</div>
+                    </div>
+
+                    <div class="slide active">
+                        <img src="images/IMG_4521.jpg" alt="Description" style="width:100%">
+                        <div class="slide-caption">Caption for image 3</div>
+                    </div>
+
+                    <div class="slide active">
+                        <img src="images/IMG_4551.jpg" alt="Description" style="width:100%">
+                        <div class="slide-caption">Caption for image 4</div>
+                    </div>
+
+                    <div class="slide active">
+                        <img src="images/IMG_4560.jpg" alt="Description" style="width:100%">
+                        <div class="slide-caption">Caption for image 5</div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                    <span class="next" onclick="plusSlides(1)">&#10095;</span>
+                </div>
+                <!-- <img src="images/about_us_image.png" alt="About Us Image"> -->
             </div>
             <div class="section-text">
                 <h1>About Us</h1>
@@ -130,5 +162,25 @@
         </div>
     </div>
 </footer>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+</script>
 
 </html>
