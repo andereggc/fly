@@ -405,12 +405,11 @@ p.indented-paragraph {
 	display: block;
 }
 
-.prev, .next {
+/* .prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
-	/* margin-top: -22px; */
 	padding: 16px;
 	color: rgb(119, 119, 119);
 	font-weight: bold;
@@ -433,7 +432,41 @@ p.indented-paragraph {
 
 .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
+} */
+
+.prev, .next {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white; /* Change to a bright color for visibility */
+  font-weight: bold;
+  font-size: 24px; /* Larger font size */
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6); /* Semi-transparent black background */
+  border: 2px solid white; /* White border */
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5); /* Shadow for depth */
 }
+
+.next {
+  right: 0; /* Adjust as necessary */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0; /* Adjust as necessary */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /* Darker background on hover */
+}
+
 
 .project-page header {
 	text-align: center;
