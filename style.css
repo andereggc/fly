@@ -30,6 +30,11 @@ body, html {
   background-color: #555;
 }
 
+.navbar a.active {
+  background-color: #666; /* Change the color to suit your design */
+  color: white;
+}
+
 section {
   min-height: 100vh;
   padding: 60px 10%;
@@ -120,21 +125,15 @@ h1 {
 /* About Us Section */
 
 .about-us-section {
+  font-size: 16px;
   background-color: #3fa94a33; /* Replace with your desired background color */
   color: black; /* Text color for better contrast with the background */
   padding: 10px 0%;
 }
 .about-us-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  flex: 0 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 60px 160px; /* Adjust top/bottom and left/right padding */
 }
+
 .about-us-image img {
   position: relative;
   flex: 1;
@@ -378,11 +377,13 @@ p.indented-paragraph {
 .slide {
 	display: none;
 	position: relative;
-	width: 40%;
+	width: 90%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
 
 .slide img.centered-image {  /* Modify the size of slide images */
 	width: 100%;
@@ -450,7 +451,7 @@ p.indented-paragraph {
   border-radius: 0 3px 3px 0;
   user-select: none;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.6); /* Semi-transparent black background */
+  background-color: rgba(0,0,0,0.4); /* Semi-transparent black background */
   border: 2px solid white; /* White border */
   box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5); /* Shadow for depth */
 }

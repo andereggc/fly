@@ -27,6 +27,21 @@
 
     <section id="about-us" class="about-us-section">
         <div class="about-us-content">
+            
+            <div class="section-text">
+                <h1>About Us</h1>
+                <p>
+                    Our Mission Is To Increase Financial Literacy And Fiscal Wellness By Empowering 
+                    Young People To Understand And Take Control Of Their Personal Finances With The 
+                    Intention That Those We Serve Will, In Turn, Utilize Their Knowledge And Skills 
+                    Within Their Communities With The End Goal Of Providing A Springboard To Help 
+                    Those Communities Thrive Economically. Through A Range Of Delivery Methods That 
+                    Include Group Lessons, Community Forums, And Guest Speaker Sponsorships, We 
+                    Provide Personal Financial Wellness Education On Budgeting, Taxes, Insurance, 
+                    Loans, Credit And Debit, Financial Accounts, Stocks, Bonds, And Mutual Funds.
+                </p> 
+            </div>
+            
             <div class="about-us-image">
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
@@ -61,19 +76,6 @@
                     <span class="next" onclick="plusSlides(1)">&#10095;</span>
                 </div>
                 <!-- <img src="images/about_us_image.png" alt="About Us Image"> -->
-            </div>
-            <div class="section-text">
-                <h1>About Us</h1>
-                <p>
-                    Our Mission Is To Increase Financial Literacy And Fiscal Wellness By Empowering 
-                    Young People To Understand And Take Control Of Their Personal Finances With The 
-                    Intention That Those We Serve Will, In Turn, Utilize Their Knowledge And Skills 
-                    Within Their Communities With The End Goal Of Providing A Springboard To Help 
-                    Those Communities Thrive Economically. Through A Range Of Delivery Methods That 
-                    Include Group Lessons, Community Forums, And Guest Speaker Sponsorships, We 
-                    Provide Personal Financial Wellness Education On Budgeting, Taxes, Insurance, 
-                    Loans, Credit And Debit, Financial Accounts, Stocks, Bonds, And Mutual Funds.
-                </p> 
             </div>
         </div>
     </section>
@@ -147,7 +149,7 @@
         </div>
         <!-- Replace the existing form with the Google Form iframe -->
         <div class="contact-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2lHLYO5Dt02u-P4y2uO8vp01ypyN_QNwKEer39lVLaBhxEA/viewform?embedded=true" width="740" height="742" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3Nh7J9QNfQZKu8siMPUcjyW3LqDGvJLNkGXQUOUfKRpP63Q/viewform?embedded=true" width="600" height="680" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </section>
 </body>
@@ -180,6 +182,24 @@
             slides[i].style.display = "none";  
         }
         slides[slideIndex-1].style.display = "block";  
+    }
+
+    // JavaScript to highlight the active nav link based on scroll position
+    window.onscroll = function() {
+        highlightNav();
+    };
+
+    function highlightNav() {
+        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        document.querySelectorAll('.navbar a').forEach(link => {
+            var section = document.querySelector(link.hash); // Get the section corresponding to the link
+            if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+                link.classList.add('active'); // Add 'active' class
+            } else {
+                link.classList.remove('active'); // Remove 'active' class
+            }
+        });
     }
 </script>
 
